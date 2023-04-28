@@ -1,0 +1,50 @@
+/* Header */
+header {
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.linotype-didot {
+    font-family: "Linotype Didot", serif;
+}
+
+/* Contact Information */
+footer {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+/* Map container */
+#map {
+  height: 300px;
+  width: 100%;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  border: 1px solid #ccc;
+  background-image: url('background.jpeg');
+  background-size: cover; /* Make the background image responsive */
+  background-position: center;
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+  section {
+    height: 100vh; /* Set the height to 100% of viewport height */
+    width: 100%; /* Set the width to 100% of the parent container */
+    margin: 0; /* Remove the margin for better fit */
+  }
+}
