@@ -108,10 +108,12 @@
                 day: 3,
                 hours: 11,
                 minutes: 0,
+                seconds: 0,
                 words: {
                     days: 'day',
                     hours: 'hour',
                     minutes: 'minute',
+                    seconds: 'second',
                     pluralLetter: 's'
                 },
                 plural: true,
@@ -132,9 +134,11 @@
             targetTmpDate,
             now,
             nowUtc,
+            secondsLeft,
             days,
             hours,
             minutes,
+            seconds,
             cd = document.querySelectorAll(elt);
 
         targetTmpDate = new Date(
@@ -142,7 +146,8 @@
             parameters.month - 1,
             parameters.day,
             parameters.hours,
-            parameters.minutes
+            parameters.minutes,
+            parameters.seconds
         );
 
         if (parameters.enableUtc) {
@@ -151,7 +156,8 @@
                 targetTmpDate.getUTCMonth(),
                 targetTmpDate.getUTCDate(),
                 targetTmpDate.getUTCHours(),
-                targetTmpDate.getUTCMinutes()
+                targetTmpDate.getUTCMinutes(),
+                targetTmpDate.getUTCSeconds()
             );
         } else {
             targetDate = targetTmpDate;
@@ -164,17 +170,33 @@
             refresh = function () {
                 var dayWord,
                     hourWord,
-                    minuteWord;
+                    minuteWord,
+                    secondWord;
 
                 now = new Date();
                 if (parameters.enableUtc) {
                     nowUtc = new Date(now.getFullYear(), now.getMonth(), now.getDate(),
-                        now.getHours(), now.getMinutes());
+                        now.getHours(), now.getMinutes(), now.getSeconds());
+                    secondsLeft = (targetDate - nowUtc.getTime()) / 1000;
 
+                } else {
+                    secondsLeft = (targetDate - now.getTime()) / 1000;
+                }
+
+                if (secondsLeft > 0) {
+                    days = parseInt(secondsLeft / 86400, 10);
+                    secondsLeft = secondsLeft % 86400;
+
+                    hours = parseInt(secondsLeft / 3600, 10);
+                    secondsLeft = secondsLeft % 3600;
+
+                    minutes = parseInt(secondsLeft / 60, 10);
+                    seconds = parseInt(secondsLeft % 60, 10);
                 } else {
                     days = 0;
                     hours = 0;
                     minutes = 0;
+                    seconds = 0;
                     window.clearInterval(interval);
                     parameters.onEnd();
                 }
@@ -192,10 +214,15 @@
                         ? parameters.words.minutes + parameters.words.pluralLetter
                         : parameters.words.minutes;
 
+                    secondWord = seconds > 1
+                        ? parameters.words.seconds + parameters.words.pluralLetter
+                        : parameters.words.seconds;
+
                 } else {
                     dayWord = parameters.words.days;
                     hourWord = parameters.words.hours;
                     minuteWord = parameters.words.minutes;
+                    secondWord = parameters.words.seconds;
                 }
 
                 /* display an inline countdown into a span tag */
@@ -203,7 +230,8 @@
                     countdown.innerHTML =
                         days + ' ' + dayWord + ', ' +
                         hours + ' ' + hourWord + ', ' +
-                        minutes + ' ' + minuteWord + ', ';
+                        minutes + ' ' + minuteWord + ', ' +
+                        seconds + ' ' + secondWord + '.';
 
                 } else {
                     fullCountDown.days.amount.textContent = (parameters.zeroPad && days.toString().length < 2 ? '0' : '') + days;
@@ -215,7 +243,8 @@
                     fullCountDown.minutes.amount.textContent = (parameters.zeroPad && minutes.toString().length < 2 ? '0' : '') + minutes;
                     fullCountDown.minutes.word.textContent = minuteWord;
 
-                    
+                    fullCountDown.seconds.amount.textContent = (parameters.zeroPad && seconds.toString().length < 2 ? '0' : '') + seconds;
+                    fullCountDown.seconds.word.textContent = secondWord;
                 }
             };
 
