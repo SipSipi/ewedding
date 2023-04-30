@@ -78,7 +78,7 @@
      * Function that create full countdown DOM elements calling createCountdownElt
      * @param parameters
      * @param countdown
-     * @returns {{days: (*|Element), hours: (*|Element), minutes: (*|Element), seconds: (*|Element)}}
+     * @returns {{days: (*|Element), hours: (*|Element), minutes: (*|Element)}}
      */
     createElements = function (parameters, countdown) {
         var spanTag;
