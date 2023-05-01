@@ -5,6 +5,20 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'kissita';
+  src: url("../fonts/kissita.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'dancing';
+  src: url("../fonts/dancing.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 /* =======================================================
 *
 * 	Template Style 
@@ -68,9 +82,17 @@ p {
   margin-bottom: 20px;
 }
 
-h1, h2, h3, h4, h5, h6, figure {
+h1, h2, h4, h5, h6, figure {
   color: #000;
   font-family: "Work Sans", Arial, sans-serif;
+  font-weight: 400;
+  margin: 0 0 20px 0;
+}
+
+h3{
+  color: #736342;
+  font-family: "dancing", Arial, sans-serif;
+  font-size: 30px;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -109,7 +131,7 @@ h1, h2, h3, h4, h5, h6, figure {
   margin: 0;
   padding: 0;
   line-height: 40px;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "dancing", Arial, serif;
 }
 .fh5co-nav a {
   padding: 5px 10px;
@@ -842,7 +864,7 @@ form label {
 .fh5co-cover .display-tc h2 {
   margin: 0;
   padding: 0;
-  color: white;
+  color: #736342;
 }
 #fh5co-header .display-tc h1,
 #fh5co-counter .display-tc h1,
@@ -850,7 +872,7 @@ form label {
   margin-bottom: 0px;
   font-size: 100px;
   line-height: 1.5;
-  font-family: "Sacramento", Arial, serif;
+  font-family: "dancing", Arial, serif;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
@@ -948,7 +970,7 @@ form label {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: rgba(241, 78, 149, 0.8);
+  background: rgba(76, 73, 65, 0.8);
   margin: 0 4px;
   -webkit-border-radius: 30%;
   -moz-border-radius: 30%;
@@ -1071,8 +1093,8 @@ form label {
   }
 }
 .couple-half h3 {
-  font-family: "Sacramento", Arial, serif;
-  color: #F14E95;
+  font-family: "dancing", Arial, serif;
+  color: #736342;
   font-size: 30px;
 }
 .couple-half .groom, .couple-half .bride {
@@ -1187,8 +1209,8 @@ form label {
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
-  color: #F14E95;
-  font-family: "Sacramento", Arial, serif;
+  color: #736342;
+  font-family: "dancing", Arial, serif;
 }
 @media screen and (max-width: 768px) {
   .fh5co-heading h2 {
