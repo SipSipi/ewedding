@@ -67,13 +67,13 @@ body {
 }
 
 a {
-  color: #F14E95;
+  color: #4e8ff1;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #F14E95;
+  color: #091be3;
   outline: none;
   text-decoration: none;
 }
@@ -1866,6 +1866,24 @@ form label {
 
 .js .animate-box {
   opacity: 0;
+}
+
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.button-container {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

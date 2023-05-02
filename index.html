@@ -223,15 +223,21 @@
 										<span>Jun, 2023</span>
 									</div>
 									<p> Turf Resort, No 26, Jalan Brook, 10450 Georgetown, Pulau Pinang</p>
-									
+									<div class="button-container">
+										<a href="https://www.waze.com/en-GB/live-map/directions/my/pulau-pinang/george-town/turf-resort-penang?navigate=yes&to=place.ChIJ2d7XB2jDSjAR8qq7A3QxLow">Open Waze</a>
+										<br>
+										<a href="https://www.google.com/maps/search/?api=1&query=Turf+Resort%2C+No+26%2C+Jalan+Brook%2C+10450+Georgetown%2C+Pulau+Pinang">Open GoogleMaps</a>
+									  </div>
+													
 								</div>
 							</div>
-							<div class="col-md-6 col-sm-6 text-center">
-								<!-- <div class="event-wrap animate-box"> -->
+							<!-- <div class="col-md-6 col-sm-6 text-center">
+								<div class="event-wrap animate-box">
 									<div id="map">
 									</div>
-								<!-- </div> -->
-							</div>
+									
+								</div>
+							</div> -->
 						</div>
 					</div>
 				</div>
@@ -695,6 +701,21 @@
 
   </script>
 
+	<script>
+	function openWaze() {
+	  var url = "https://www.waze.com/en-GB/live-map/directions/my/pulau-pinang/george-town/turf-resort-penang?navigate=yes&to=place.ChIJ2d7XB2jDSjAR8qq7A3QxLow";
+	
+	  window.open(url, "_blank");
+	}
+	</script>
+	<script>
+		function openGoogleMaps() {
+		  var address = encodeURIComponent("Turf Resort, No 26, Jalan Brook, 10450 Georgetown, Pulau Pinang");
+		  var url = "https://www.google.com/maps/search/?api=1&query=" + address;
+		
+		  window.open(url, "_blank");
+		}
+		</script>
 	</body>
 </html>
 
