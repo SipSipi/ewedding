@@ -18,7 +18,19 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'ballet';
+  src: url("../fonts/ballet.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: 'september';
+  src: url("../fonts/september.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 /* =======================================================
 *
 * 	Template Style 
@@ -524,7 +536,9 @@ h3{
   -moz-border-radius: 4px;
   -ms-border-radius: 4px;
   border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
+
 .timeline > li > .timeline-panel:before {
   position: absolute;
   top: 80px;
@@ -872,7 +886,7 @@ form label {
   margin-bottom: 0px;
   font-size: 100px;
   line-height: 1.5;
-  font-family: "dancing", Arial, serif;
+  font-family: "september", Arial, serif;
 }
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
@@ -970,12 +984,12 @@ form label {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: rgba(76, 73, 65, 0.8);
+  background: rgba(155, 154, 152, 0.8);
   margin: 0 4px;
-  -webkit-border-radius: 30%;
-  -moz-border-radius: 30%;
-  -ms-border-radius: 30%;
-  border-radius: 30%;
+  -webkit-border-radius: 25%;
+  -moz-border-radius: 25%;
+  -ms-border-radius: 25%;
+  border-radius: 25%;
   position: relative;
   animation: pulse 1s ease infinite;
 }
@@ -1002,19 +1016,19 @@ form label {
 .simply-countdown > .simply-section .simply-amount,
 .simply-countdown > .simply-section .simply-word {
   display: block;
-  color: white;
+  color: rgb(255, 255, 255);
   /* amounts and words */
 }
 
 .simply-countdown > .simply-section .simply-amount {
-  font-size: 30px;
+  font-size: 20px;
   /* amounts */
 }
 
 .simply-countdown > .simply-section .simply-word {
   color: rgba(255, 255, 255, 0.7);
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 8px;
   /* words */
 }
 
