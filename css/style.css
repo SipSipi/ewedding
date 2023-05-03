@@ -31,13 +31,34 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'cinzel';
+  src: url("../fonts/cinzel.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cinzel2';
+  src: url("../fonts/cinzel2.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'cinzel3';
+  src: url("../fonts/Cinzel-VariableFont_wght.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 /* =======================================================
 *
 * 	Template Style 
 *
 * ======================================================= */
 body {
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: "cinzel", Arial, sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
@@ -96,7 +117,7 @@ p {
 
 h1, h2, h4, h5, h6, figure {
   color: #000;
-  font-family: "Work Sans", Arial, sans-serif;
+  font-family: "cinzel3", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
@@ -884,22 +905,33 @@ form label {
 #fh5co-counter .display-tc h1,
 .fh5co-cover .display-tc h1 {
   margin-bottom: 0px;
+  margin-bottom: 0px;
   font-size: 100px;
   line-height: 1.5;
   font-family: "september", Arial, serif;
 }
+
+#fh5co-header .display-tc h2,
+#fh5co-counter .display-tc h2,
+.fh5co-cover .display-tc h2 {
+  margin-bottom: 0px;
+  font-size: 10px;
+  line-height: 1.5;
+  font-family: "cinzel3", Arial, serif;
+}
+
 @media screen and (max-width: 768px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 70px;
+    font-size: 60px;
   }
 }
 @media screen and (max-width: 480px) {
   #fh5co-header .display-tc h1,
   #fh5co-counter .display-tc h1,
   .fh5co-cover .display-tc h1 {
-    font-size: 70px;
+    font-size: 60px;
   }
 }
 #fh5co-header .display-tc h2,
