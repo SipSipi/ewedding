@@ -177,6 +177,9 @@ h3{
     display: none;
   }
 }
+.fh5co-bg ul {
+    list-style-type: none;
+}
 .fh5co-nav ul {
   padding: 0;
   margin: 2px 0 0 0;
@@ -431,7 +434,7 @@ h3{
 }
 #fh5co-counter .fh5co-heading h2,
 #fh5co-event .fh5co-heading h2 {
-  color: #fff;
+  color: #e2b523;
 }
 #fh5co-counter .fh5co-heading span,
 #fh5co-event .fh5co-heading span {
