@@ -181,7 +181,7 @@ h3{
     list-style-type: none;
 }
 
-.footer .grid-list {
+.fh5co-section-gray .grid-list {
   display: contents;
   align-items: center;
   align-self: center;
@@ -189,12 +189,12 @@ h3{
 
 }
 
-.footer  .row {
+.fh5co-section-gray  .row {
   display: flex;
   margin-bottom: 1px;
 }
 
-.footer  .column {
+.fh5co-section-gray  .column {
   flex-basis: 50%;
   list-style-type: none;
   padding: 0;
@@ -1135,8 +1135,6 @@ form label {
 
 .fh5co-section-gray {
   background: rgba(248, 248, 248, 0.04);
-  display: inline-block;
-  height: auto;
 }
 
 .couple-wrap {
