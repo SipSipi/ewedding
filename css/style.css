@@ -182,9 +182,9 @@ h3{
 }
 
 .fh5co-section-gray .grid-list {
-  display: contents;
+  display: flex;
+  justify-items: center;
   align-items: center;
-  align-self: center;
   flex-direction: column;
 
 }
