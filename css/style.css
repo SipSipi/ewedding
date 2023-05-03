@@ -182,13 +182,14 @@ h3{
 }
 
 .fh5co-section-gray .grid-list {
-  display: flex;
+  display: contents;
   flex-direction: column;
+
 }
 
 .fh5co-section-gray .row {
   display: flex;
-  margin-bottom: 3px;
+  margin-bottom: 1px;
 }
 
 .fh5co-section-gray .column {
