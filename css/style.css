@@ -181,18 +181,19 @@ h3{
     list-style-type: none;
 }
 
-.fh5co-section-gray .grid-list {
+.footer .grid-list {
   display: contents;
+  align-self: center;
   flex-direction: column;
 
 }
 
-.fh5co-section-gray .row {
+.footer  .row {
   display: flex;
   margin-bottom: 1px;
 }
 
-.fh5co-section-gray .column {
+.footer  .column {
   flex-basis: 50%;
   list-style-type: none;
   padding: 0;
