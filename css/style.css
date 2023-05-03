@@ -180,10 +180,45 @@ h3{
 .fh5co-bg ul {
     list-style-type: none;
 }
+
+.fh5co-section-gray .grid-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.fh5co-section-gray .row {
+  display: flex;
+  margin-bottom: 3px;
+}
+
+.fh5co-section-gray .column {
+  flex-basis: 50%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+
 .fh5co-nav ul {
   padding: 0;
   margin: 2px 0 0 0;
 }
+
+.horizontal-lists {
+  display: flex;
+}
+
+.horizontal-list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.horizontal-list li {
+  margin-right: 10px;
+}
+
 .fh5co-nav ul li {
   padding: 0;
   margin: 0;
@@ -1931,10 +1966,6 @@ form label {
   margin: 10px;
   cursor: pointer;
   border-radius: 20px;
-}
-
-.button-container {
-  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
