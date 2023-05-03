@@ -183,6 +183,7 @@ h3{
 
 .footer .grid-list {
   display: contents;
+  align-items: center;
   align-self: center;
   flex-direction: column;
 
@@ -1134,6 +1135,8 @@ form label {
 
 .fh5co-section-gray {
   background: rgba(248, 248, 248, 0.04);
+  display: inline-block;
+  height: auto;
 }
 
 .couple-wrap {
